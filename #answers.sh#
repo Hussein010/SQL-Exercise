@@ -14,3 +14,13 @@ WHERE name = "Basma";
 UPDATE students
 SET Points = Points - 50
 WHERE name = "Alex";
+
+CREATE TABLE graduates(
+   ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+   Name           TEXT      NOT NULL UNIQUE,
+   Age            INT,
+   Gender        TEXT,
+   Points         INTEGER,
+   Graduation     DATE
+);
+
